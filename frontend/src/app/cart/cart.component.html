@@ -1,0 +1,25 @@
+<div class="table-r">
+  <table class="table-wrap">
+    <tbody>
+      <tr *ngFor="let product of cart[0]">
+        <th class="row-wrap">
+          <div class="wrap">
+            <img src="{{product.image}}" alt="" width="70" class="img">
+            <div class="title-wrap">
+                  <a routerLink='/addtocart'>{{product.title}}</a>
+            </div>
+          </div>
+        </th>
+        <td class="price-wrap">
+              <div class="price">${{(product.price)}}</div>
+        </td>
+        <td class="wrap-qty"><div class="qty">1</div></td>
+        <td class="wrap-btn"><a class="btn" (click)="onRemoveProductsFromCart(product.id)"><i class="fa fa-trash"></i></a></td>
+      </tr>
+    </tbody>
+  </table>
+
+ <a class="view-cart" routerLink='/addtocart'><strong>View Cart</strong></a>
+</div>
+
+

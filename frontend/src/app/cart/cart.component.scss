@@ -1,0 +1,98 @@
+$color: #333;
+$bg: #f5f5f5;
+.table-r {
+  max-height: 509px;
+  max-width: 602px;
+  right: 0;
+  color: $color;
+  background: $bg;
+  position: absolute;
+  top: 61px;
+  border-radius: 5px;
+  .table-wrap {
+    background-color: $bg;
+    color: $color;
+    .row-wrap {
+      padding: 10px;
+      background-color: $bg;
+      .wrap {
+        background-color: $bg;
+        text-align-last: center;
+        .img {
+          background-color: $bg;
+          border-radius: 50%;
+          box-shadow: 1px 1px 2px$color;
+          image-rendering: pixelated;
+          object-fit: contain;
+        }
+        .title-wrap {
+          margin-top: 10px;
+          background-color: $bg;
+          a {
+            text-decoration: none;
+            font-size: 16px;
+            color: $color;
+            background-color: $bg;
+          }
+          a:hover{
+            color: #4f56c0;
+          }
+        }
+      }
+    }
+    .price-wrap {
+      background-color: $bg;
+      .price {
+        color: $color;
+        background-color: $bg;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 5px;
+        display: block;
+      }
+    }
+
+    .wrap-qty {
+      background-color: $bg;
+      .qty {
+        color: $color;
+        background-color: $bg;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 20px;
+      }
+    }
+    .wrap-btn {
+      background-color: $bg;
+      .btn {
+        color: $color;
+        background-color: $bg;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 20px;
+        .fa {
+          color: rgb(238, 9, 9);
+          background-color: $bg;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+ a{
+   text-decoration: none;
+ }
+  .view-cart{
+      background-color: $bg;
+      text-align: center;
+      display: block;
+      cursor: pointer;
+      margin: 5px;
+      strong{
+        background-color: $bg;
+        color: $color;
+      }
+      strong:hover{
+        color: #4f56c0;
+      }
+  }
+}

@@ -1,0 +1,32 @@
+<nav class="header-nav">
+  <div *ngIf="flag; else elseblock"></div>
+  <div class="header-content-nav">
+    <div class="header-logo">
+      <a href="/">
+        <img
+          src="https://softsensor.ai/wp-content/uploads/2020/10/logo.png"
+          alt="logo"
+          class="logo"
+        />
+      </a>
+    </div>
+    <div class="main-search-input-wrap">
+      <div class="main-search-input fl-wrap">
+        <div class="main-search-input-item">
+          <input type="text" value="" placeholder="Search Products..." [(ngModel)]="searchString" (ngModelChange)="onSearch(searchString)" />
+        </div>
+        <button class="main-search-button">Search</button>
+      </div>
+    </div>
+    <nav class="header-navigation">
+      <button href="#" class="link-button" (click)="onclick()">
+        <span class="badge badge-red" *ngIf="itemCount != 0">
+          {{ itemCount }} </span
+        ><i class="fas fa-shopping-cart"></i>
+      </button>
+    </nav>
+  </div>
+</nav>
+<ng-template #elseblock>
+  <app-cart *ngIf="itemCount != 0"></app-cart>
+</ng-template>

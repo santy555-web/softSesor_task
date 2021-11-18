@@ -1,0 +1,26 @@
+<div class="container-r">
+	<div class="responsive-container">
+		<div class="grid"  >
+			<div class="grid-column" *ngFor="let item of product[0]">
+					<a class="product" href="#">
+					<div class="product-image">
+						<img src="{{item.image}}" height="250px" />
+
+					</div>
+					<div class="product-content">
+						<div class="product-info">
+							<h2 class="product-title">{{item.title}}</h2>
+							<p class="product-details">Price :&nbsp;$ {{item.price}}</p>
+              <p class="product-details">Rating: &nbsp;{{item.ratingrate}} </p>
+              <div class="btns">
+              <button class="btn" (click)="onAddProductToCart(item)">ADD TO CART</button>
+              <button class="btn" routerLink="/">BUY</button>
+              <button class="btn"> <i class="far fa-heart"></i></button>
+					  	</div>
+          </div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

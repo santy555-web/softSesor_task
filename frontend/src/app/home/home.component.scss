@@ -1,0 +1,110 @@
+.container-r {
+  margin-bottom: 6rem;
+  padding-top: 2rem;
+}
+.responsive-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    .grid-column {
+      display: flex;
+      flex-direction: column;
+      .product {
+        border-radius: 0.25rem;
+        text-decoration: none;
+        font-weight: 400;
+        transition: 0.15s ease;
+        overflow: hidden;
+        height: 60vh;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .product:hover,
+      :focus {
+        box-shadow: rgba(7, 7, 7, 0.2) 0px 0px 0px 1px inset,
+          rgba(248, 248, 248, 0.9) 0px 0px 0px 1px;
+      }
+      .product-image {
+        display: flex;
+        padding-top: 1rem;
+        background-color: #fff;
+        justify-content: center;
+        overflow: hidden;
+        img {
+          width: 120px;
+          height: 140px;
+        }
+
+      }
+      .product-content {
+        padding: 1rem;
+        color: #000;
+        height: 187px;
+        width: 408px;
+        display: table-cell;
+        vertical-align: bottom;
+        background-color: #fff;
+        .product-info {
+          background-color: #fff;
+          .product-title {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            background-color: #fff;
+          }
+          .product-details {
+            margin: 10px 0;
+            line-height: 1;
+            color: #333;
+            background-color: #fff;
+          }
+          .btns {
+            display: flex;
+            align-self: center;
+            justify-content: space-between;
+            background-color: #fff;
+            .btn {
+              text-align: center;
+              border: none;
+              padding: 8px;
+              border: 1px solid #fff;
+              border-radius: 6px;
+              cursor: pointer;
+              .far {
+                background-color: transparent;
+              }
+            }
+            .btn:hover {
+              background-color: #fff;
+              color: #000;
+              border: 1px solid #333;
+              .far {
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 2fr) !important;
+  }
+  .grid-column {
+    margin-top: 1.5rem;
+  }
+}
+@media all and (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .grid-column {
+    margin-top: 1.5rem;
+  }
+}

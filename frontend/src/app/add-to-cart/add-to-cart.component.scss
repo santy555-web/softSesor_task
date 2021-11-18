@@ -1,0 +1,35 @@
+
+.row{
+  border-radius: 5px;
+}
+.col-lg-8{
+  border-radius: 10px 0px 0px 10px;
+}
+.col-lg-4{
+  border-radius: 0px 10px 10px 0px;
+}
+h3{
+  background-color: white;
+  color: #333;
+}
+.quantity{
+  position: relative;
+}
+.plus{
+  background-color: white;
+  border: none;
+  position: absolute;
+  right: 2px;
+  top: 3px;
+  color: #333;
+  margin-right: -7px;
+}
+.minus{
+  background-color: white;
+  border: none;
+  position: absolute;
+  right: 78px;
+  color: #333;
+  top: 3px;
+  margin-right: 2px;
+}
